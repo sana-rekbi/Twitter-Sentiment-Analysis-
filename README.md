@@ -12,10 +12,6 @@ This project aims to perform sentiment analysis on Twitter data using Natural La
   - Tokenization (splitting text into individual words)
 - The preprocessed text is then transformed into numerical features using the TF-IDF (Term Frequency-Inverse Document Frequency) method. TF-IDF helps represent the importance of words in a document relative to the entire dataset.
 
-### Modeling with Random Forest
-- The Random Forest algorithm is employed for the classification task. It is a robust ensemble learning method that combines multiple decision trees to improve the accuracy and prevent overfitting.
-- The model is trained on the transformed TF-IDF features to learn patterns in the data and predict sentiment labels.
-
 ### Deployment with Streamlit
 - An interactive web application is built using Streamlit, allowing users to input their own text and view sentiment predictions instantly.
 - The app makes the project user-friendly and accessible, providing a simple interface for testing the model with real-world tweets.
@@ -24,7 +20,7 @@ This project aims to perform sentiment analysis on Twitter data using Natural La
 1. **Data Preprocessing**:
    - The raw Twitter data undergoes text cleaning and transformation into TF-IDF vectors.
 2. **Model Training**:
-   - The Random Forest model is trained on the processed data, using hyperparameter tuning to optimize performance.
+   -A model is trained on the processed data, using hyperparameter tuning to optimize performance.
 3. **Evaluation**:
    - The trained model is evaluated using various metrics like accuracy, precision, recall, and F1-score to determine its effectiveness in predicting sentiment.
 4. **Web App Development**:
@@ -37,7 +33,6 @@ This project aims to perform sentiment analysis on Twitter data using Natural La
   - `pandas` and `numpy`: For data manipulation and analysis.
   - `Streamlit`: To build the interactive web application.
   - `nltk`: For natural language preprocessing tasks.
-- **Random Forest Algorithm**: Used for the classification of sentiments.
 - **TF-IDF**: To convert textual data into numerical features.
 
 ## 💡 Use Cases
@@ -50,5 +45,5 @@ The project is particularly valuable for businesses in the following ways:
 ## 📈 Results
 The model achieves satisfactory performance in predicting the sentiment of tweets. Further improvements could include:
 - Adding more data for training.
-- Fine-tuning the hyperparameters of the Random Forest model.
+- Fine-tuning the hyperparameters of the model.
 - Exploring more sophisticated NLP techniques like Word2Vec or BERT for feature extraction.
